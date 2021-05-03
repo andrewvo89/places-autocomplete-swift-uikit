@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		49126272263A11E900D6FBC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49126270263A11E900D6FBC8 /* Main.storyboard */; };
 		49126274263A11EA00D6FBC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49126273263A11EA00D6FBC8 /* Assets.xcassets */; };
 		49126277263A11EA00D6FBC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49126275263A11EA00D6FBC8 /* LaunchScreen.storyboard */; };
+		498BFCC6263A677400CE5CF7 /* api-keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 498BFCC5263A677400CE5CF7 /* api-keys.plist */; };
+		7ADDEFFDC97D6E0263878C2B /* Pods_places_autocomplete_swift_uikit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4AC2C322ED646B6775DA70 /* Pods_places_autocomplete_swift_uikit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		460C75B38B31DE07133054B8 /* Pods-places-autocomplete-swift-uikit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-places-autocomplete-swift-uikit.release.xcconfig"; path = "Target Support Files/Pods-places-autocomplete-swift-uikit/Pods-places-autocomplete-swift-uikit.release.xcconfig"; sourceTree = "<group>"; };
 		49126267263A11E900D6FBC8 /* places-autocomplete-swift-uikit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "places-autocomplete-swift-uikit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4912626A263A11E900D6FBC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4912626C263A11E900D6FBC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		49126273263A11EA00D6FBC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49126276263A11EA00D6FBC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49126278263A11EA00D6FBC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		498BFCC5263A677400CE5CF7 /* api-keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "api-keys.plist"; sourceTree = "<group>"; };
+		9F4AC2C322ED646B6775DA70 /* Pods_places_autocomplete_swift_uikit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_places_autocomplete_swift_uikit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A49D4B0902B6683093F4A531 /* Pods-places-autocomplete-swift-uikit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-places-autocomplete-swift-uikit.debug.xcconfig"; path = "Target Support Files/Pods-places-autocomplete-swift-uikit/Pods-places-autocomplete-swift-uikit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,18 +37,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADDEFFDC97D6E0263878C2B /* Pods_places_autocomplete_swift_uikit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		263ADAACC950796CD21ADE6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A49D4B0902B6683093F4A531 /* Pods-places-autocomplete-swift-uikit.debug.xcconfig */,
+				460C75B38B31DE07133054B8 /* Pods-places-autocomplete-swift-uikit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4912625E263A11E900D6FBC8 = {
 			isa = PBXGroup;
 			children = (
 				49126269263A11E900D6FBC8 /* places-autocomplete-swift-uikit */,
 				49126268263A11E900D6FBC8 /* Products */,
+				263ADAACC950796CD21ADE6F /* Pods */,
+				9D2A09CC60308EBA5E48DA74 /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
 		};
 		49126268263A11E900D6FBC8 /* Products */ = {
@@ -63,8 +82,17 @@
 				49126273263A11EA00D6FBC8 /* Assets.xcassets */,
 				49126275263A11EA00D6FBC8 /* LaunchScreen.storyboard */,
 				49126278263A11EA00D6FBC8 /* Info.plist */,
+				498BFCC5263A677400CE5CF7 /* api-keys.plist */,
 			);
 			path = "places-autocomplete-swift-uikit";
+			sourceTree = "<group>";
+		};
+		9D2A09CC60308EBA5E48DA74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F4AC2C322ED646B6775DA70 /* Pods_places_autocomplete_swift_uikit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4912627B263A11EA00D6FBC8 /* Build configuration list for PBXNativeTarget "places-autocomplete-swift-uikit" */;
 			buildPhases = (
+				4A89EBFAD75047129328BD39 /* [CP] Check Pods Manifest.lock */,
 				49126263263A11E900D6FBC8 /* Sources */,
 				49126264263A11E900D6FBC8 /* Frameworks */,
 				49126265263A11E900D6FBC8 /* Resources */,
+				137ED17A3F3633AC2B225C69 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,10 +157,53 @@
 				49126277263A11EA00D6FBC8 /* LaunchScreen.storyboard in Resources */,
 				49126274263A11EA00D6FBC8 /* Assets.xcassets in Resources */,
 				49126272263A11E900D6FBC8 /* Main.storyboard in Resources */,
+				498BFCC6263A677400CE5CF7 /* api-keys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		137ED17A3F3633AC2B225C69 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-places-autocomplete-swift-uikit/Pods-places-autocomplete-swift-uikit-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-places-autocomplete-swift-uikit/Pods-places-autocomplete-swift-uikit-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-places-autocomplete-swift-uikit/Pods-places-autocomplete-swift-uikit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A89EBFAD75047129328BD39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-places-autocomplete-swift-uikit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		49126263263A11E900D6FBC8 /* Sources */ = {
@@ -283,6 +356,7 @@
 		};
 		4912627C263A11EA00D6FBC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A49D4B0902B6683093F4A531 /* Pods-places-autocomplete-swift-uikit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +376,7 @@
 		};
 		4912627D263A11EA00D6FBC8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 460C75B38B31DE07133054B8 /* Pods-places-autocomplete-swift-uikit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
